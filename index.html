@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Karto Labs — Applied AI Exploration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-start: #000000;
+      --bg-end: #0f766e; /* cyber‑teal */
+      --text: #eaeaea;
+      --accent: #34d399;
+      --muted: #9ca3af;
+      --max-width: 820px;
+      --font: 'Poppins', system-ui, sans-serif;
+      --heading-font: 'Orbitron', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      /* top 60% solid black, bottom 40% fades to teal */
+      background: linear-gradient(180deg,var(--bg-start) 0%, var(--bg-start) 55%, var(--bg-end) 100%);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header { text-align: center; padding: 4rem 1rem 2rem; }
+    footer { text-align: center; padding: 2.5rem 1rem 2rem; border-top: 1px solid rgba(255,255,255,0.08); }
+
+    header h1 {
+      font-family: var(--heading-font);
+      font-size: clamp(2.25rem, 4.5vw, 3.25rem);
+      letter-spacing: 0.07em;
+    }
+    header p { margin-top: 1rem; max-width: var(--max-width); margin-inline: auto; color: var(--muted); }
+
+    main { flex: 1; display: flex; justify-content: center; padding: 2rem 1rem; }
+
+    article { width: 100%; max-width: var(--max-width); }
+
+    section { margin-bottom: 3rem; }
+
+    section h2 { font-size: 1.5rem; color: var(--accent); margin-bottom: 1rem; font-family: var(--heading-font); }
+
+    section ul { list-style: disc; padding-left: 1.5rem; }
+    section li { margin-bottom: .75rem; }
+
+    /* CTA styles */
+    .cta {
+      text-align: left;
+      margin-top: 3rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1.25rem;
+      background: var(--accent);
+      color: var(--bg-start);
+      padding: .9rem 2rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 14px rgba(0,0,0,0.3);
+    }
+
+    footer small { color: var(--muted); }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg-start: #fafafa;
+        --bg-end: #d1fae5;
+        --text: #111827;
+        --accent: #10b981;
+        --muted: #6b7280;
+      }
+      body {
+        background: linear-gradient(180deg,var(--bg-start) 0%, var(--bg-start) 60%, var(--bg-end) 40%);
+      }
+      footer { border-top: 1px solid rgba(0,0,0,0.08); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/karto-labs-white.png" alt="Karto Labs Logo" style="max-width: 200px;">
+    <p style="color: #34d399">An independent, one‑person AI exploration lab in India.</p>
+  </header>
+
+  <main>
+    <article>
+      <section>
+        <p>We look past the easy demos and headlines to understand what's happening underneath. Our focus is on the practical mechanics: fine-tuning models, rigorous evaluation, and the detailed work of prompt engineering.</p>
+        <p>This is a space for hands-on experimentation. We build, test, and sometimes break things to learn how AI behaves in the real world, especially when tackling harder problems.</p>
+        <p>Think of this as a garage where a bunch of friends experiment with AI tools, and document the journey while others are using them for making faceless YouTube videos and TikToks.</p>
+      </section>
+
+      <section>
+        <h2>What you'll find here</h2>
+        <ul>
+          <li>Deep dives into specific AI techniques</li>
+          <li>Honest accounts of experiments — what worked, what didn’t, and why</li>
+          <li>Code explorations with practical takeaways</li>
+          <li>Insights shaped by building, not just theory</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What you won’t find here</h2>
+        <ul>
+          <li>Quick hacks or surface‑level summaries</li>
+          <li>Clickbait or oversimplified hype</li>
+          <li>Yet another AI newsletter</li>
+        </ul>
+      </section>
+
+      <section>
+        <p>We're driven by curiosity and the desire to build real understanding. We share substantive insights for fellow builders, researchers, and anyone who wants to look beyond the AI surface.</p>
+      </section>
+
+      <!-- Call‑to‑Action -->
+      <section id="experiments" class="cta">
+        <h2>Ready to dive deeper?</h2>
+        <p>Explore our live experiments and see what we're testing right now.</p>
+        <a href="#" class="btn">Explore notes and experiments</a>
+      </section>
+
+      <section>
+        <h2>About the founder</h2>
+        <p>Karto Labs is founded and run by <a href="https://karthikpasupathy.com" style="color:white">Karthik Pasupathy.</a> He explores the practical application and deeper implications of AI systems, sharing insights from his hands-on work in India.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <small>&copy; 2025 Karto Labs — Navigating the world through curiosity</small>
+  </footer>
+</body>
+</html>
